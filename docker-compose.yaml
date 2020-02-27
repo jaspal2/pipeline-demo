@@ -18,7 +18,5 @@ services:
     image: selenium/node-firefox:3.141.59-bismuth
     depends_on:
       - selenium-hub
-    environment:
-      - HUB_HOST=selenium-hub
-      - HUB_PORT=4444
+   
 ~                      
