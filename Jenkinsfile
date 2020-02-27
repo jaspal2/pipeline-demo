@@ -1,11 +1,9 @@
 pipeline {
-    agent {
-        docker { image 'node:7-alpine' }
-    }
+    agent none
     stages {
         stage('Test') {
             steps {
-                sh 'pwd'
+                sh 'docker-compose up'
             }
         }
     }
